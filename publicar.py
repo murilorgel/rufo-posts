@@ -14,7 +14,6 @@ Uso:
 import json, sys, time, urllib.request, urllib.parse, urllib.error, datetime, pathlib
 from zoneinfo import ZoneInfo
 
-API = "https://graph.instagram.com/v23.0"
 AQUI = pathlib.Path(__file__).resolve().parent
 CAL = AQUI / "calendario.json"
 LOG = AQUI / "log.txt"
@@ -28,7 +27,7 @@ def log(msg):
 
 
 def api(method, path, **params):
-    url = f"{API}/{path}"
+    url = f"{API_BASE}/{path}"
     data = None
     if method == "GET":
         if params:
@@ -43,9 +42,23 @@ def api(method, path, **params):
         raise RuntimeError(f"{method} {path}: {e.code} {e.read().decode()[:500]}")
 
 
-def conta():
-    me = api("GET", "me", fields="user_id,username,account_type")
-    return me
+API_BASE = "https://graph.instagram.com/v23.0"
+
+
+def configurar(cal):
+    """Define o endpoint. Token de usuário do sistema (BM) usa graph.facebook.com
+    e o ID da conta do Instagram fica no calendario.json (ig_user_id)."""
+    global API_BASE
+    if cal.get("api") == "facebook":
+        API_BASE = "https://graph.facebook.com/v23.0"
+
+
+def conta(cal):
+    if cal.get("api") == "facebook":
+        ig = cal["ig_user_id"]
+        info = api("GET", ig, fields="username")
+        return {"user_id": ig, "username": info.get("username")}
+    return api("GET", "me", fields="user_id,username,account_type")
 
 
 def esperar_pronto(container_id, limite=600):
@@ -99,7 +112,7 @@ def quando(post, cal):
 
 
 def rodar(posts_alvo, cal):
-    me = conta()
+    me = conta(cal)
     ig_id = me["user_id"]
     for p in posts_alvo:
         log(f"post {p['id']}: publicando ({len(p['imagens'])} imagem(ns)) em @{me['username']}")
@@ -120,9 +133,10 @@ def rodar(posts_alvo, cal):
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "pendentes"
     cal = carregar()
+    configurar(cal)
     agora = datetime.datetime.now(ZoneInfo(cal["fuso"]))
     if cmd == "checar":
-        print(conta())
+        print(conta(cal))
     elif cmd == "pendentes":
         for p in cal["posts"]:
             if p["status"] in ("pendente", "erro"):
