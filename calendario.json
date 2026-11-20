@@ -28,7 +28,7 @@
     },
     {
       "id": "03",
-      "quando": "2026-11-16T12:00",
+      "quando": "2026-11-23T12:00",
       "status": "pendente",
       "imagens": [
         "rufo_post_03_o_que_fazemos_a.jpg",
@@ -43,7 +43,7 @@
     },
     {
       "id": "04",
-      "quando": "2026-11-16T15:00",
+      "quando": "2026-11-23T15:00",
       "status": "pendente",
       "imagens": [
         "rufo_post_04_proposta_de_valor.jpg"
@@ -52,7 +52,7 @@
     },
     {
       "id": "05",
-      "quando": "2026-11-16T19:00",
+      "quando": "2026-11-23T19:00",
       "status": "pendente",
       "imagens": [
         "rufo_post_05_proposito_a.jpg",
@@ -65,7 +65,7 @@
     },
     {
       "id": "06",
-      "quando": "2026-11-17T12:00",
+      "quando": "2026-11-24T12:00",
       "status": "pendente",
       "imagens": [
         "rufo_post_06_porque_a_rufo.jpg"
