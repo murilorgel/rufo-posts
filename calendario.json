@@ -1,5 +1,7 @@
 {
   "fuso": "America/Sao_Paulo",
+  "api": "facebook",
+  "ig_user_id": "17841414857185328",
   "midia_base_url": "https://raw.githubusercontent.com/murilorgel/rufo-posts/main/midia/",
   "posts": [
     {
