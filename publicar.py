@@ -48,7 +48,7 @@ def conta():
     return me
 
 
-def esperar_pronto(container_id, limite=180):
+def esperar_pronto(container_id, limite=600):
     t0 = time.time()
     while time.time() - t0 < limite:
         st = api("GET", container_id, fields="status_code").get("status_code")
@@ -63,12 +63,20 @@ def esperar_pronto(container_id, limite=180):
 def publicar(post, cal, ig_id):
     base = cal["midia_base_url"]
     urls = [base + img for img in post["imagens"]]
+    def eh_video(u):
+        return u.lower().endswith((".mp4", ".mov"))
     if len(urls) == 1:
-        c = api("POST", f"{ig_id}/media", image_url=urls[0], caption=post["legenda"])["id"]
+        if eh_video(urls[0]):
+            c = api("POST", f"{ig_id}/media", media_type="REELS", video_url=urls[0], caption=post["legenda"], share_to_feed="true")["id"]
+        else:
+            c = api("POST", f"{ig_id}/media", image_url=urls[0], caption=post["legenda"])["id"]
     else:
         filhos = []
         for u in urls:
-            filhos.append(api("POST", f"{ig_id}/media", image_url=u, is_carousel_item="true")["id"])
+            if eh_video(u):
+                filhos.append(api("POST", f"{ig_id}/media", media_type="VIDEO", video_url=u, is_carousel_item="true")["id"])
+            else:
+                filhos.append(api("POST", f"{ig_id}/media", image_url=u, is_carousel_item="true")["id"])
         for f in filhos:
             esperar_pronto(f)
         c = api("POST", f"{ig_id}/media", media_type="CAROUSEL", children=",".join(filhos), caption=post["legenda"])["id"]
