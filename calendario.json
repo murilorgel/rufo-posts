@@ -1,0 +1,74 @@
+{
+  "fuso": "America/Sao_Paulo",
+  "midia_base_url": "https://raw.githubusercontent.com/murilorgel/rufo-posts/main/midia/",
+  "posts": [
+    {
+      "id": "01",
+      "quando": "2026-11-13T17:04",
+      "status": "publicado_manual",
+      "imagens": [
+        "rufo_post_01_prazer_rufo_a.jpg",
+        "rufo_post_01_prazer_rufo_b.jpg",
+        "rufo_post_01_prazer_rufo_c.jpg",
+        "rufo_post_01_prazer_rufo_d.jpg",
+        "rufo_post_01_prazer_rufo_e.jpg"
+      ],
+      "legenda": ""
+    },
+    {
+      "id": "02",
+      "quando": "2026-11-15T19:47",
+      "status": "publicado_manual",
+      "imagens": [
+        "rufo_post_02_de_onde_vem_a.jpg"
+      ],
+      "legenda": "De onde vem o nome?\nTurdus rufiventris, o sabiá-laranjeira. \"Rufo\" vem do ventre cor de ferrugem dele. E também do rufar dos tambores, o som que anuncia que algo grande vai acontecer.\nRufo · marketing de resultado."
+    },
+    {
+      "id": "03",
+      "quando": "2026-11-16T12:00",
+      "status": "pendente",
+      "imagens": [
+        "rufo_post_03_o_que_fazemos_a.jpg",
+        "rufo_post_03_o_que_fazemos_b.jpg",
+        "rufo_post_03_o_que_fazemos_c.jpg",
+        "rufo_post_03_o_que_fazemos_d.jpg",
+        "rufo_post_03_o_que_fazemos_e.jpg",
+        "rufo_post_03_o_que_fazemos_f.jpg",
+        "rufo_post_03_o_que_fazemos_g.jpg"
+      ],
+      "legenda": "O que a Rufo faz, do começo ao fim:\n01 Planejamento: antes de tudo, a meta.\n02 Criação: a ideia certa para o objetivo.\n03 Produção: uma captação vira conteúdo para semanas.\n04 Mídia: anúncio que aparece.\n05 Conversão: cada contato bem aproveitado.\n06 Relatório: tudo medido pelo que importa.\nQual dessas etapas a sua marca precisa hoje? Conta pra gente nos comentários."
+    },
+    {
+      "id": "04",
+      "quando": "2026-11-16T15:00",
+      "status": "pendente",
+      "imagens": [
+        "rufo_post_04_proposta_de_valor.jpg"
+      ],
+      "legenda": "Para toda empresa, toda venda conta.\nPor isso a gente começa entendendo o objetivo da sua marca, e só depois pensa em formato, canal e verba.\nRufo · marketing de resultado."
+    },
+    {
+      "id": "05",
+      "quando": "2026-11-16T19:00",
+      "status": "pendente",
+      "imagens": [
+        "rufo_post_05_proposito_a.jpg",
+        "rufo_post_05_proposito_b.jpg",
+        "rufo_post_05_proposito_c.jpg",
+        "rufo_post_05_proposito_d.jpg",
+        "rufo_post_05_proposito_e.jpg"
+      ],
+      "legenda": "Cada ação com um porquê.\nToda ação da Rufo começa com uma meta clara: gerar contatos, aproximar a marca do cliente, ganhar espaço no PDV ou o que for mais importante para você.\nCom ela em vista, a gente produz, veicula, mede e ajusta o caminho até o objetivo aparecer no resultado.\nQual é a meta da sua marca? Conta pra gente. O link está na bio."
+    },
+    {
+      "id": "06",
+      "quando": "2026-11-17T12:00",
+      "status": "pendente",
+      "imagens": [
+        "rufo_post_06_porque_a_rufo.jpg"
+      ],
+      "legenda": "5 coisas que você vai notar trabalhando com a Rufo.\nProximidade, presença e um time que acompanha o seu projeto de perto, do planejamento ao relatório.\nQuer ver na prática? Chama a gente no direct. 🧡\n#marketingderesultado #rufo"
+    }
+  ]
+}
