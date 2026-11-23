@@ -47,11 +47,14 @@
     {
       "id": "04",
       "quando": "2026-11-23T15:00",
-      "status": "pendente",
+      "status": "publicado",
       "imagens": [
         "rufo_post_04_proposta_de_valor.jpg"
       ],
-      "legenda": "Para toda empresa, toda venda conta.\nPor isso a gente começa entendendo o objetivo da sua marca, e só depois pensa em formato, canal e verba.\nRufo · marketing de resultado."
+      "legenda": "Para toda empresa, toda venda conta.\nPor isso a gente começa entendendo o objetivo da sua marca, e só depois pensa em formato, canal e verba.\nRufo · marketing de resultado.",
+      "media_id": "17993274363074772",
+      "link": "https://www.instagram.com/p/DgF-dlUDxf6/",
+      "publicado_em": "2026-11-23T15:01-03:00"
     },
     {
       "id": "05",
