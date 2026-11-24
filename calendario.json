@@ -75,14 +75,15 @@
     {
       "id": "06",
       "quando": "2026-11-24T12:00",
-      "status": "publicado",
+      "status": "removido",
       "imagens": [
         "rufo_post_06_porque_a_rufo.jpg"
       ],
       "legenda": "5 coisas que você vai notar trabalhando com a Rufo.\nProximidade, presença e um time que acompanha o seu projeto de perto, do planejamento ao relatório.\nQuer ver na prática? Chama a gente no direct. 🧡\n#marketingderesultado #rufo",
       "media_id": "18037651604853965",
       "link": "https://www.instagram.com/p/DgIOpM6FAIZ/",
-      "publicado_em": "2026-11-24T12:01-03:00"
+      "publicado_em": "2026-11-24T12:01-03:00",
+      "obs": "apagado pelo Murilo em 24/11: arte de carrossel ainda não feita"
     }
   ]
 }
